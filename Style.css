@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-size: 15pt;
+    background: lightblue;
+    
+}
+
+.container{
+  height: fit-content;
+  width: 500px;
+  background: white;
+  margin: 100px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.card{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.card::before{
+  content: "Flash sale";
+  position: absolute;
+  padding: 5px 40px;
+  background: red;
+  border: 2px solid orangered;
+  top: 40px;
+  left: -25px;
+  color: white;
+  transform: rotate(315deg) scale(1.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card::after{
+  content: " 35% Discount";
+  position: absolute;
+  padding: 5px 20px;
+  background: red;
+  bottom: 0;
+  right: 0;
+  color: white;
+  border-top-left-radius: 10px;
+}
+h2{
+  text-align: center;
+  margin: 50px auto;
+}
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+p{
+  width: 100%;
+  
+}
+button{
+  margin: 50px auto;
+  display: block;
+  color: white;
+  background: green;
+  padding: 8px 16px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+}
+button:hover{
+  background: red;
+}
+button:visited{
+  background: lightgreen;
+}
